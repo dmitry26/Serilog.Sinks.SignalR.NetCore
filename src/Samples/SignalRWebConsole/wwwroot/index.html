@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>SignalR Web Log Console</title>
+    <style type="text/css">
+        .container {
+            background-color: black;
+            border: thick solid #808080;
+            padding: 10px;
+            margin: 10px;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        .text-success {
+            color: white;
+        }
+
+        .text-info {
+            color: lightgray;
+        }
+
+        .text-warning {
+            color: yellow;
+        }
+
+        .text-danger {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="tbl margin-top">
+        <div>
+            <div>
+                <div class="container">
+                    <div>
+                        <ul id="consoleContainer"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Script references. -->
+    <script type="application/javascript" src="lib/console-log-html.min.js"></script>
+    <!--Reference the SignalR library. -->
+    <script type="text/javascript" src="lib/signalr.min.js"></script>
+    <!--Add script to update the page and send messages.-->
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            // Start the connection.
+            var connection = new signalR.HubConnectionBuilder()
+                .withUrl('/log')
+                .build();
+
+            // Create a function that the hub can call to broadcast messages.
+            connection.on('writeLogEvents', function (msgs) {
+                for (i = 0; i < msgs.length; i++) {
+                    let m = msgs[i];
+
+                    if (m)
+                        writeLogEvent(m.logLevel, m.message);
+                }
+            });
+
+            function writeLogEvent(level, message) {
+                let list = document.getElementById("consoleContainer");
+
+                if (list != null && list.childNodes.length >= 200)
+                    list.removeChild(list.lastChild);
+
+                if (level === 1)
+                    console.debug(message);
+                else if (level === 2)
+                    console.info(message);
+                else if (level === 3)
+                    console.warn(message);
+                else if (level === 4 || level === 5)
+                    console.error(message);
+                else
+                    console.log(message);
+            }
+
+            connection.start()
+                .then(function () {
+                    // Redirect log messages
+                    ConsoleLogHTML.connect(document.getElementById("consoleContainer"), undefined, false, false);
+                    console.log('connection started');
+                    connection.invoke('JoinGroup', null);
+                })
+                .catch(error => {
+                    console.error(error.message);
+                });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serilog.Sinks.SignalR", "src\Serilog.Sinks.SignalR\Serilog.Sinks.SignalR.csproj", "{55C845AC-7A54-4E72-B74C-B10593672945}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serilog.Sinks.SignalRCore", "src\Serilog.Sinks.SignalRCore\Serilog.Sinks.SignalRCore.csproj", "{3C3F19DB-CB9A-43A0-ACC1-24B7AC787868}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serilog.Sinks.SignalRClient", "src\Serilog.Sinks.SignalRClient\Serilog.Sinks.SignalRClient.csproj", "{682E8CE8-21E2-4C7D-BCDA-A277E9FF5CDF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{B04FAEFD-8FEB-4BA5-A4C9-A4746863F603}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRWebConsole", "src\Samples\SignalRWebConsole\SignalRWebConsole.csproj", "{AF2860BF-8AB6-4629-A260-97774201A0B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SinalRLogPubConsole", "src\Samples\SinalRLogPubConsole\SinalRLogPubConsole.csproj", "{A475ACDC-3F6A-4CD7-A2F2-F6765AB4DF16}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRLogConsole", "src\Samples\SignalRLogConsole\SignalRLogConsole.csproj", "{47E6F3BD-F0C1-4899-A231-17B1BEFC6659}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRLogPubWebApi", "src\Samples\SignalRLogPubWebApi\SignalRLogPubWebApi.csproj", "{41F9842A-A5A9-4573-A374-11D80DF8D7C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55C845AC-7A54-4E72-B74C-B10593672945}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55C845AC-7A54-4E72-B74C-B10593672945}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55C845AC-7A54-4E72-B74C-B10593672945}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55C845AC-7A54-4E72-B74C-B10593672945}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C3F19DB-CB9A-43A0-ACC1-24B7AC787868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C3F19DB-CB9A-43A0-ACC1-24B7AC787868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C3F19DB-CB9A-43A0-ACC1-24B7AC787868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C3F19DB-CB9A-43A0-ACC1-24B7AC787868}.Release|Any CPU.Build.0 = Release|Any CPU
+		{682E8CE8-21E2-4C7D-BCDA-A277E9FF5CDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{682E8CE8-21E2-4C7D-BCDA-A277E9FF5CDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{682E8CE8-21E2-4C7D-BCDA-A277E9FF5CDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{682E8CE8-21E2-4C7D-BCDA-A277E9FF5CDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF2860BF-8AB6-4629-A260-97774201A0B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF2860BF-8AB6-4629-A260-97774201A0B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF2860BF-8AB6-4629-A260-97774201A0B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF2860BF-8AB6-4629-A260-97774201A0B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A475ACDC-3F6A-4CD7-A2F2-F6765AB4DF16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A475ACDC-3F6A-4CD7-A2F2-F6765AB4DF16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A475ACDC-3F6A-4CD7-A2F2-F6765AB4DF16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A475ACDC-3F6A-4CD7-A2F2-F6765AB4DF16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47E6F3BD-F0C1-4899-A231-17B1BEFC6659}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47E6F3BD-F0C1-4899-A231-17B1BEFC6659}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47E6F3BD-F0C1-4899-A231-17B1BEFC6659}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47E6F3BD-F0C1-4899-A231-17B1BEFC6659}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41F9842A-A5A9-4573-A374-11D80DF8D7C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41F9842A-A5A9-4573-A374-11D80DF8D7C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41F9842A-A5A9-4573-A374-11D80DF8D7C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41F9842A-A5A9-4573-A374-11D80DF8D7C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AF2860BF-8AB6-4629-A260-97774201A0B1} = {B04FAEFD-8FEB-4BA5-A4C9-A4746863F603}
+		{A475ACDC-3F6A-4CD7-A2F2-F6765AB4DF16} = {B04FAEFD-8FEB-4BA5-A4C9-A4746863F603}
+		{47E6F3BD-F0C1-4899-A231-17B1BEFC6659} = {B04FAEFD-8FEB-4BA5-A4C9-A4746863F603}
+		{41F9842A-A5A9-4573-A374-11D80DF8D7C5} = {B04FAEFD-8FEB-4BA5-A4C9-A4746863F603}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA0CE429-4EF3-4C41-B35A-61DA10776BE2}
+	EndGlobalSection
+EndGlobal

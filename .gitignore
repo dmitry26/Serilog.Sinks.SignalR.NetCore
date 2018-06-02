@@ -1,0 +1,10 @@
+bin/
+obj/
+*.nupkg
+.vs
+packages/
+src/**/logs/
+src/**/appsettings.Development.json
+src/**/*.csproj.user
+src/**/wwwroot/lib/
+**/node_modules/
