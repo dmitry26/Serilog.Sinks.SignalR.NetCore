@@ -29,7 +29,7 @@ namespace SinalRLogPubConsole
 				await Task.Delay(TimeSpan.FromSeconds(5),stoppingToken).ConfigureAwait(false);
 			}
 
-			_logger.LogInformation("MyService is stopping.");
+			_logger.LogInformation("MyService background task is stopping.");
 		}
 	}
 }
