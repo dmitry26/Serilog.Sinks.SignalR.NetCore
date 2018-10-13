@@ -10,7 +10,6 @@ var rimraf = require("rimraf");
 var rename = require('gulp-rename');
 var npmDist = require('ouanalyse-gulp-main-npm-files');
 var flatten = require('gulp-flatten');
-var runSeries = require('run-sequence').use(gulp);
 
 gulp.task("lib:minify", function () {
     return gulp.src(['wwwroot/lib/*.js', '!wwwroot/lib/*.min.js'])
@@ -38,6 +37,4 @@ gulp.task("lib:scripts", function () {
         .pipe(gulp.dest('wwwroot/lib'));
 });
 
-gulp.task("lib:default", function (cb) {
-    runSeries('lib:clean', 'lib:scripts', 'lib:minify');
-});
+gulp.task("lib:default", gulp.series('lib:clean', 'lib:scripts', 'lib:minify'));

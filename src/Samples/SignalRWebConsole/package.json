@@ -11,12 +11,11 @@
     "console-log-html": "^2.0.2"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-flatten": "^0.4.0",
-    "gulp-rename": "^1.2.3",
-    "gulp-uglify": "^3.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.1",
     "ouanalyse-gulp-main-npm-files": "^1.0.7",
-    "rimraf": "^2.6.2",
-    "run-sequence": "^2.2.1"
+    "rimraf": "^2.6.2"
   }
 }
