@@ -10,6 +10,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serilog.Sinks.SignalRClient", "src\Serilog.Sinks.SignalRClient\Serilog.Sinks.SignalRClient.csproj", "{682E8CE8-21E2-4C7D-BCDA-A277E9FF5CDF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{B04FAEFD-8FEB-4BA5-A4C9-A4746863F603}"
+	ProjectSection(SolutionItems) = preProject
+		src\Samples\Directory.Build.props = src\Samples\Directory.Build.props
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRWebConsole", "src\Samples\SignalRWebConsole\SignalRWebConsole.csproj", "{AF2860BF-8AB6-4629-A260-97774201A0B1}"
 EndProject
@@ -18,6 +21,11 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRLogConsole", "src\Samples\SignalRLogConsole\SignalRLogConsole.csproj", "{47E6F3BD-F0C1-4899-A231-17B1BEFC6659}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRLogPubWebApi", "src\Samples\SignalRLogPubWebApi\SignalRLogPubWebApi.csproj", "{41F9842A-A5A9-4573-A374-11D80DF8D7C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F60F478C-C119-4C48-804C-D9CCFC51D6B6}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
