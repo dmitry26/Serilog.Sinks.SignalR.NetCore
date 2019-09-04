@@ -7,7 +7,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@aspnet/signalr": "^1.0.4",
+    "@aspnet/signalr": "^1.1.4",
     "console-log-html": "^2.0.2"
   },
   "devDependencies": {
